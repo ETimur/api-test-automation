@@ -1,0 +1,9 @@
+{
+  "post_create_patient": {
+    "first_name": "QA",
+    "last_name": "TestPatient",
+    "date_of_birth": "1990-05-15",
+    "email": "qa.test@example.com",
+    "phone": "555-0100"
+  }
+}

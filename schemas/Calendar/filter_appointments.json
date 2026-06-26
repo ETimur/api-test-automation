@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["appointments", "total_count"],
+  "properties": {
+    "appointments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "patient_id", "appointment_status"],
+        "properties": {
+          "id": { "type": "string" },
+          "patient_id": { "type": "string" },
+          "provider_id": { "type": "string" },
+          "appointment_status": { "type": "string" }
+        }
+      }
+    },
+    "total_count": { "type": "integer" }
+  }
+}

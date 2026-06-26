@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["id", "first_name", "last_name", "date_of_birth"],
+  "properties": {
+    "id": { "type": "string" },
+    "first_name": { "type": "string" },
+    "last_name": { "type": "string" },
+    "date_of_birth": { "type": "string", "format": "date" },
+    "email": { "type": "string" },
+    "phone": { "type": "string" },
+    "mrn": { "type": "string" },
+    "created_at": { "type": "string", "format": "date-time" }
+  }
+}

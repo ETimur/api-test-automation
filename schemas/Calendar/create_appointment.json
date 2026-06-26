@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["id", "patient_id", "provider_id", "facility_id", "start_datetime", "end_datetime", "appointment_status"],
+  "properties": {
+    "id": { "type": "string" },
+    "patient_id": { "type": "string" },
+    "provider_id": { "type": "string" },
+    "facility_id": { "type": "string" },
+    "start_datetime": { "type": "string", "format": "date-time" },
+    "end_datetime": { "type": "string", "format": "date-time" },
+    "appointment_status": { "type": "string", "enum": ["SCHEDULED", "CHECKED_IN", "IN_PROGRESS", "COMPLETED", "CANCELLED"] },
+    "visit_type": { "type": "string" },
+    "notes": { "type": "string" },
+    "created_at": { "type": "string", "format": "date-time" }
+  }
+}
